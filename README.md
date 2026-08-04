@@ -37,3 +37,4 @@ Diseñando arquitecturas de datos escalables, sistemas empresariales robustos y 
 *Open to new opportunities and collaborations!*
 
 </div>
+
