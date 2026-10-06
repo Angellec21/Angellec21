@@ -1,14 +1,14 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=58A6FF&center=true&vCenter=true&width=650&lines=Hi!+I'm+Angel+Emanuel+Lecaro;Full-Stack+Developer+from+Santa+Cruz%2C+Bolivia+%F0%9F%87%A7%F0%9F%87%B4;Sistemas+comerciales+y+empresariales" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=58A6FF&center=true&vCenter=true&width=650&lines=Hola!+Soy+Angel+Emanuel+Lecaro;ERP+%C2%B7+Inventario+%C2%B7+Facturaci%C3%B3n+%C2%B7+Punto+de+venta;Santa+Cruz%2C+Bolivia+%F0%9F%87%A7%F0%9F%87%B4" alt="Typing SVG" />
 
-## Hi! I'm Angel Emanuel Lecaro Quispe
+## Hola, soy Angel Emanuel Lecaro Quispe
 
 ---
 
-### Full Stack Developer from Santa Cruz, Bolivia 🇧🇴
+### Desarrollador de sistemas de gestión para empresas · Santa Cruz, Bolivia 🇧🇴
 
-Desarrollo sistemas comerciales y empresariales: puntos de venta, inventarios, ERP, CRM y dashboards gerenciales para negocios reales.
+Construyo los sistemas con los que una empresa opera día a día: inventario, facturación, contabilidad, logística y punto de venta. Mi fuerte es el diseño de bases de datos y la modernización de sistemas heredados.
 
 </div>
 
@@ -49,7 +49,7 @@ Desarrollo sistemas comerciales y empresariales: puntos de venta, inventarios, E
 ## 📫 Connect with me
 
 <p align="left">
-  <a href="https://linkedin.com/in/angel-lecaro"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://www.linkedin.com/in/angel-emanuel-lecaro-a27289312"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="mailto:lecaroquispe@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" /></a>
   <a href="https://wa.me/59165884086"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" /></a>
 </p>
