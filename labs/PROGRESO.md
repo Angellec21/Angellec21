@@ -7,12 +7,15 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 **1. farmacia-pos-api** (Node.js/Express): sistema para farmacias.
 Repo: https://github.com/Angellec21/farmacia-pos-api
 
-- Estado: sin empezar. La sesión en la nube todavía no tiene acceso al repo.
-- Pendiente: estructura inicial, README, modelos (productos, lotes, proveedores), ventas, alertas de vencimiento y stock mínimo, autenticación JWT con roles admin/cajero, tests con Jest.
+- Estado: día 1 de ~6 hecho (3 commits preparados), **pendiente de publicar**: el repo aún no existe en GitHub y la app de Claude no tiene permiso para crearlo.
+- Hecho: estructura Express + Jest, README, productos con lotes, descuento FEFO, alertas de vencimiento/stock mínimo con valor en riesgo en Bs, 22 pruebas pasando.
+- Falta: ventas con ticket, proveedores y compras, JWT con roles admin/cajero, reportes del dueño.
 
 ## Bitácora
 
 - 2026-10-07: se creó este archivo. No se pudo avanzar en farmacia-pos-api porque la sesión no pudo adjuntar el repo (la herramienta `add_repo` no estaba disponible).
+
+- 2026-10-07 (más tarde): se programó el día 1 de farmacia-pos-api (3 commits, 22 pruebas). Se entregó a Angel como .zip con historial para que cree el repo y lo publique desde su Mac.
 
 ## Lista de proyectos
 
