@@ -21,6 +21,8 @@ Repo: https://github.com/Angellec21/farmacia-pos-api
 
 - 2026-10-09: sin avance. El repo farmacia-pos-api sigue en el día 1 (no se aplicó el bundle del día 2) y el push volvió a ser rechazado por el proxy (repo fuera de las fuentes autorizadas de la sesión). No se rehízo el trabajo para no duplicar ni chocar con el bundle del día 2 pendiente.
 
+- 2026-10-10: sin avance, mismo bloqueo. `add_repo` no está disponible en la sesión y el proxy rechaza el push a farmacia-pos-api (no está en las fuentes autorizadas). El repo remoto sigue en `82fa9d2` (día 1). Solución: agregar los repos de proyectos a las fuentes de la tarea programada (o instalar la app de Claude con acceso a ellos) y aplicar el bundle del día 2.
+
 ## Lista de proyectos
 
 | # | Proyecto | Estado |
