@@ -7,7 +7,7 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 **1. farmacia-pos-api** (Node.js/Express): sistema para farmacias.
 Repo: https://github.com/Angellec21/farmacia-pos-api
 
-- Estado: día 2 de ~6. Día 1 publicado en GitHub (último commit `82fa9d2`). Día 2 (3 commits) **sigue sin publicar**: la tarea programada solo tiene acceso de escritura a Angellec21/angellec21. **Bloqueado** hasta que se agreguen los repos de proyectos a las fuentes de la tarea.
+- Estado: día 2 de ~6. Día 1 publicado en GitHub (último commit `82fa9d2`). Día 2 (3 commits) **sigue sin publicar**: la tarea programada solo tiene acceso de escritura a Angellec21/angellec21. **Bloqueado** (desde 2026-10-09) hasta que se agreguen los repos de proyectos a las fuentes de la tarea.
 - Hecho: estructura Express + Jest, productos con lotes, salida FEFO, alertas de vencimiento/stock mínimo, ventas con ticket imprimible (58 mm), venta todo-o-nada, trazabilidad de lotes por venta, margen en Bs y cierre diario por método de pago. 39 pruebas pasando.
 - Falta: proveedores y compras (ingreso de lotes), JWT con roles admin/cajero, reportes del dueño (más vendidos, margen por producto), datos de ejemplo de Santa Cruz.
 
@@ -26,6 +26,8 @@ Repo: https://github.com/Angellec21/farmacia-pos-api
 - 2026-10-13: sin avance, mismo bloqueo (4.º día seguido). `add_repo` sigue sin estar disponible y el acceso a farmacia-pos-api es rechazado (la sesión solo autoriza Angellec21/angellec21). El repo remoto sigue en `82fa9d2` (día 1). Solución: en la configuración de la tarea programada, agregar los 12 repos de proyectos como fuentes (o habilitar `add_repo`) y aplicar el bundle del día 2.
 
 - 2026-10-14: sin avance, mismo bloqueo (5.º día seguido). `add_repo` sigue sin aparecer en la sesión y el proxy rechaza el push a farmacia-pos-api (403: no está en las fuentes autorizadas; solo Angellec21/angellec21). El repo remoto sigue en `82fa9d2` (día 1). Solución: en la tarea programada (app de Claude → Tareas programadas → esta tarea → Fuentes/Repositorios) agregar farmacia-pos-api y los demás repos de proyectos, o instalar la app de Claude en GitHub con acceso a ellos.
+
+- 2026-10-15: sin avance, mismo bloqueo (6.º día seguido). `add_repo` sigue sin estar disponible y el proxy rechaza el push a farmacia-pos-api con 403 ("not in this session's authorized repository set"). El repo remoto sigue en `82fa9d2` (día 1). Solución: en la tarea programada (app de Claude → Tareas programadas → esta tarea → Fuentes/Repositorios) agregar farmacia-pos-api y los otros 11 repos de proyectos.
 
 ## Lista de proyectos
 
