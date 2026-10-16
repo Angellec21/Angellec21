@@ -7,9 +7,9 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 **1. farmacia-pos-api** (Node.js/Express): sistema para farmacias.
 Repo: https://github.com/Angellec21/farmacia-pos-api
 
-- Estado: día 2 de ~6. Publicado en GitHub hasta `82fa9d2` (día 1). Día 2 entregado como bundle en `labs/entregas/farmacia-pos-api.bundle` (último commit `d004857`); lo publica la tarea "Preparar repos en Mac" a las 19:30.
-- Hecho: estructura Express + Jest, productos con lotes, salida FEFO, alertas de vencimiento/stock mínimo, ventas todo-o-nada con trazabilidad de lotes y cambio en efectivo, ticket térmico de 58 mm, cierre de caja diario (margen en Bs y %, ticket promedio, totales por método de pago). 37 pruebas pasando.
-- Falta: proveedores y compras (ingreso de lotes), JWT con roles admin/cajero, reportes del dueño (más vendidos, margen por producto), persistencia y datos de ejemplo de Santa Cruz.
+- Estado: día 3 de ~6. Publicado en GitHub hasta `82fa9d2` (día 1); la tarea del Mac aún no publicó el bundle del día 2. El bundle en `labs/entregas/farmacia-pos-api.bundle` contiene días 2 y 3 (último commit `9af2fec`); lo publica la tarea "Preparar repos en Mac" a las 19:30.
+- Hecho: estructura Express + Jest, productos con lotes, salida FEFO, alertas de vencimiento/stock mínimo, ventas todo-o-nada con trazabilidad de lotes, ticket térmico de 58 mm, cierre de caja diario, proveedores (NIT, días de crédito), compras todo-o-nada que ingresan lotes, abonos y cuentas por pagar con facturas vencidas. 49 pruebas pasando.
+- Falta: JWT con roles admin/cajero, reportes del dueño (más vendidos, margen por producto), persistencia y datos de ejemplo de Santa Cruz.
 
 ## Bitácora
 
@@ -30,6 +30,8 @@ Repo: https://github.com/Angellec21/farmacia-pos-api
 - 2026-10-15: sin avance, mismo bloqueo (6.º día seguido). `add_repo` sigue sin estar disponible y el proxy rechaza el push a farmacia-pos-api con 403 ("not in this session's authorized repository set"). El repo remoto sigue en `82fa9d2` (día 1). Solución: en la tarea programada (app de Claude → Tareas programadas → esta tarea → Fuentes/Repositorios) agregar farmacia-pos-api y los otros 11 repos de proyectos.
 
 - 2026-10-15 (día 2, rehecho con el nuevo flujo de bundles): el bundle del 2026-10-08 nunca llegó al repo, así que se rehízo el día 2 sobre `82fa9d2`. Commits: `e6a490f` feat: ventas todo-o-nada con FEFO y trazabilidad de lotes; `d004857` feat: ticket térmico de 58 mm y cierre de caja diario (incluye README con arquitectura). 37 pruebas pasando. Entregado en `labs/entregas/farmacia-pos-api.bundle`.
+
+- 2026-10-16 (día 3): se continuó desde el bundle del día 2 (aún no publicado; origin/main es ancestro). Commits: `75c85d5` feat: proveedores y compras con ingreso de lotes y cuentas por pagar; `9af2fec` feat: endpoints de proveedores, compras y cuentas por pagar (README actualizado). 49 pruebas pasando. Bundle actualizado con días 2 y 3.
 
 ## Lista de proyectos
 
