@@ -7,9 +7,9 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 **1. farmacia-pos-api** (Node.js/Express): sistema para farmacias.
 Repo: https://github.com/Angellec21/farmacia-pos-api
 
-- Estado: día 3 de ~6. Publicado en GitHub hasta `9af2fec` (días 1 a 3).
-- Hecho: estructura Express + Jest, productos con lotes, salida FEFO, alertas de vencimiento/stock mínimo, ventas todo-o-nada con trazabilidad de lotes, ticket térmico de 58 mm, cierre de caja diario, proveedores (NIT, días de crédito), compras todo-o-nada que ingresan lotes, abonos y cuentas por pagar con facturas vencidas. 49 pruebas pasando.
-- Falta: JWT con roles admin/cajero, reportes del dueño (más vendidos, margen por producto), persistencia y datos de ejemplo de Santa Cruz.
+- Estado: día 4 de ~6. Publicado en GitHub hasta `9af2fec` (días 1 a 3); día 4 (`a34c0f5`, `402119b`) en el bundle, pendiente de publicar desde el Mac.
+- Hecho: estructura Express + Jest, productos con lotes, salida FEFO, alertas de vencimiento/stock mínimo, ventas todo-o-nada con trazabilidad de lotes, ticket térmico de 58 mm, cierre de caja diario, proveedores y compras con cuentas por pagar, autenticación JWT (scrypt para contraseñas) con permisos admin/cajero. 65 pruebas pasando.
+- Falta: reportes del dueño (más vendidos, margen por producto, ventas por cajero), persistencia (SQLite) y datos de ejemplo de Santa Cruz.
 
 ## Bitácora
 
@@ -34,6 +34,8 @@ Repo: https://github.com/Angellec21/farmacia-pos-api
 - 2026-10-16 (día 3): se continuó desde el bundle del día 2 (aún no publicado; origin/main es ancestro). Commits: `75c85d5` feat: proveedores y compras con ingreso de lotes y cuentas por pagar; `9af2fec` feat: endpoints de proveedores, compras y cuentas por pagar (README actualizado). 49 pruebas pasando. Bundle actualizado con días 2 y 3.
 
 - 2026-10-18: la tarea "Preparar repos en Mac" estaba pausada desde el 15-oct (no encontraba el Mac). Angel la reactivó y la ejecutó a mano: días 2 y 3 publicados (`origin/main` = `9af2fec`).
+
+- 2026-10-19 (día 4): `origin/main` ya tenía los días 1–3 (bundle anterior publicado). Commits: `a34c0f5` feat: autenticación JWT con usuarios y contraseñas cifradas; `402119b` feat: permisos por rol admin/cajero en ventas, productos y compras (README con tabla de permisos). 65 pruebas pasando. Bundle actualizado.
 
 ## Lista de proyectos
 
