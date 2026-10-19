@@ -7,7 +7,7 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 **1. farmacia-pos-api** (Node.js/Express): sistema para farmacias.
 Repo: https://github.com/Angellec21/farmacia-pos-api
 
-- Estado: día 3 de ~6. Publicado en GitHub hasta `82fa9d2` (día 1); la tarea del Mac aún no publicó el bundle del día 2. El bundle en `labs/entregas/farmacia-pos-api.bundle` contiene días 2 y 3 (último commit `9af2fec`); lo publica la tarea "Preparar repos en Mac" a las 19:30.
+- Estado: día 3 de ~6. Publicado en GitHub hasta `9af2fec` (días 1 a 3).
 - Hecho: estructura Express + Jest, productos con lotes, salida FEFO, alertas de vencimiento/stock mínimo, ventas todo-o-nada con trazabilidad de lotes, ticket térmico de 58 mm, cierre de caja diario, proveedores (NIT, días de crédito), compras todo-o-nada que ingresan lotes, abonos y cuentas por pagar con facturas vencidas. 49 pruebas pasando.
 - Falta: JWT con roles admin/cajero, reportes del dueño (más vendidos, margen por producto), persistencia y datos de ejemplo de Santa Cruz.
 
@@ -32,6 +32,8 @@ Repo: https://github.com/Angellec21/farmacia-pos-api
 - 2026-10-15 (día 2, rehecho con el nuevo flujo de bundles): el bundle del 2026-10-08 nunca llegó al repo, así que se rehízo el día 2 sobre `82fa9d2`. Commits: `e6a490f` feat: ventas todo-o-nada con FEFO y trazabilidad de lotes; `d004857` feat: ticket térmico de 58 mm y cierre de caja diario (incluye README con arquitectura). 37 pruebas pasando. Entregado en `labs/entregas/farmacia-pos-api.bundle`.
 
 - 2026-10-16 (día 3): se continuó desde el bundle del día 2 (aún no publicado; origin/main es ancestro). Commits: `75c85d5` feat: proveedores y compras con ingreso de lotes y cuentas por pagar; `9af2fec` feat: endpoints de proveedores, compras y cuentas por pagar (README actualizado). 49 pruebas pasando. Bundle actualizado con días 2 y 3.
+
+- 2026-10-18: la tarea "Preparar repos en Mac" estaba pausada desde el 15-oct (no encontraba el Mac). Angel la reactivó y la ejecutó a mano: días 2 y 3 publicados (`origin/main` = `9af2fec`).
 
 ## Lista de proyectos
 
