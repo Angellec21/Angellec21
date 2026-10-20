@@ -38,11 +38,18 @@ Construyo los sistemas con los que una empresa opera día a día: inventario, fa
 
 ## 💼 Proyectos comerciales
 
-| Proyecto | Para quién | Stack |
+Sistemas pensados para negocios reales de Santa Cruz: montos en Bs, reportes para el dueño y pruebas automáticas en cada proyecto.
+
+| Proyecto | Qué resuelve | Stack | Estado |
+|---|---|---|---|
+| [farmacia-pos-api](https://github.com/Angellec21/farmacia-pos-api) | Farmacias: lotes con vencimiento y salida FEFO, ventas con ticket térmico, compras a droguerías, cuentas por pagar, roles admin/cajero | Node.js · Express · JWT · Jest | [![CI](https://github.com/Angellec21/farmacia-pos-api/actions/workflows/ci.yml/badge.svg)](https://github.com/Angellec21/farmacia-pos-api/actions/workflows/ci.yml) En desarrollo |
+| boutique-inventario | Tiendas de ropa: variantes por talla y color, stock por sucursal y transferencias | Python · FastAPI · pytest | Próximamente |
+| licoreria-pos | Licorerías: caja con apertura/cierre de turno, venta por unidad y por caja | TypeScript · React | Próximamente |
+
+### Otros proyectos
+
+| Proyecto | Descripción | Stack |
 |---|---|---|
-| [farmacia-pos-api](https://github.com/Angellec21/farmacia-pos-api) | Farmacias: lotes, vencimientos y ventas | Node.js · Express · JWT |
-| [boutique-inventario](https://github.com/Angellec21/boutique-inventario) | Tiendas de ropa: tallas, colores y sucursales | Python · FastAPI |
-| [licoreria-pos](https://github.com/Angellec21/licoreria-pos) | Licorerías: caja, turnos y stock | TypeScript · React |
 | [sis321-ferroviaria-oriental-grupo2](https://github.com/Angellec21/sis321-ferroviaria-oriental-grupo2) | Ferroviaria Oriental: auth, RBAC, reportes y pagos | JavaScript |
 | [santa-cruz-segura](https://github.com/Angellec21/santa-cruz-segura) | Plataforma con IA para anticipar delitos en Santa Cruz | HTML · IA |
 

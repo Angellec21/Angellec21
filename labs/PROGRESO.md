@@ -7,7 +7,7 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 **1. farmacia-pos-api** (Node.js/Express): sistema para farmacias.
 Repo: https://github.com/Angellec21/farmacia-pos-api
 
-- Estado: día 4 de ~6. Publicado en GitHub hasta `9af2fec` (días 1 a 3); día 4 (`a34c0f5`, `402119b`) en el bundle, pendiente de publicar desde el Mac.
+- Estado: día 4 de ~6. Publicado en GitHub hasta `402119b` (días 1 a 4). En el bundle, pendiente de publicar: `115da62` ci (GitHub Actions).
 - Hecho: estructura Express + Jest, productos con lotes, salida FEFO, alertas de vencimiento/stock mínimo, ventas todo-o-nada con trazabilidad de lotes, ticket térmico de 58 mm, cierre de caja diario, proveedores y compras con cuentas por pagar, autenticación JWT (scrypt para contraseñas) con permisos admin/cajero. 65 pruebas pasando.
 - Falta: reportes del dueño (más vendidos, margen por producto, ventas por cajero), persistencia (SQLite) y datos de ejemplo de Santa Cruz.
 
@@ -36,6 +36,8 @@ Repo: https://github.com/Angellec21/farmacia-pos-api
 - 2026-10-18: la tarea "Preparar repos en Mac" estaba pausada desde el 15-oct (no encontraba el Mac). Angel la reactivó y la ejecutó a mano: días 2 y 3 publicados (`origin/main` = `9af2fec`).
 
 - 2026-10-19 (día 4): `origin/main` ya tenía los días 1–3 (bundle anterior publicado). Commits: `a34c0f5` feat: autenticación JWT con usuarios y contraseñas cifradas; `402119b` feat: permisos por rol admin/cajero en ventas, productos y compras (README con tabla de permisos). 65 pruebas pasando. Bundle actualizado.
+
+- 2026-10-20 (mejoras de perfil, a pedido de Angel): `115da62` ci: pruebas automáticas en GitHub Actions con Node 20, 22 y 24 + insignias en el README. Temas del repo en `labs/entregas/farmacia-pos-api.topics`. README de perfil: tabla de proyectos con estado e insignia de CI (los repos aún vacíos ya no tienen enlace). Nuevas reglas para las tareas: commits por etapa, CI desde el día 1, release v1.0.0 al terminar y repos creados solo cuando ya tienen contenido.
 
 ## Lista de proyectos
 
