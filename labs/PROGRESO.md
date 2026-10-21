@@ -4,12 +4,9 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 
 ## Proyecto actual
 
-**1. farmacia-pos-api** (Node.js/Express): sistema para farmacias.
-Repo: https://github.com/Angellec21/farmacia-pos-api
+**2. boutique-inventario** (Python/FastAPI): inventario para tienda de ropa. Empieza en la próxima ejecución (día 1, repo nuevo: se entrega por bundle y el Mac lo crea).
 
-- Estado: día 5 de ~6. Publicado en GitHub hasta `402119b` (días 1 a 4). En el bundle, pendientes de publicar: `115da62` ci (GitHub Actions), `8b56fcb` y `907470d` (reportes del dueño). Último commit: `907470d`.
-- Hecho: estructura Express + Jest, productos con lotes, salida FEFO, alertas de vencimiento/stock mínimo, ventas todo-o-nada con trazabilidad de lotes, ticket térmico de 58 mm, cierre de caja diario, proveedores y compras con cuentas por pagar, autenticación JWT (scrypt) con permisos admin/cajero, CI en GitHub Actions, reportes del dueño (más vendidos, margen por producto, ventas por cajero; solo admin). 77 pruebas pasando.
-- Falta (día 6): persistencia en SQLite, datos de ejemplo de Santa Cruz (script de semilla), versión 1.0.0 en package.json, `labs/entregas/farmacia-pos-api.release.md` y marcar como Terminado.
+- Falta: todo (estructura FastAPI + pytest, variantes por talla y color, stock por sucursal, transferencias, ventas, reporte de más vendidos, CI, README, topics).
 
 ## Bitácora
 
@@ -41,12 +38,14 @@ Repo: https://github.com/Angellec21/farmacia-pos-api
 
 - 2026-10-20 (día 5): se continuó desde el bundle (origin/main = `402119b`, ancestro). Commits: `8b56fcb` feat: reportes del dueño (más vendidos, margen por producto, ventas por cajero); `907470d` feat: endpoints /reportes para el dueño, solo admin (README actualizado). 77 pruebas pasando. Bundle actualizado. README de perfil: descripción de farmacia-pos-api con reportes.
 
+- 2026-10-21 (día 6, final): `origin/main` ya tenía los días 1–5 (`907470d`). Commits: `658bc8c` feat: persistencia en archivo JSON con guardado automático (escritura atómica, carga al iniciar); `3de7a9b` feat: datos de ejemplo de una farmacia de Santa Cruz (`npm run seed`); `158f9a7` docs: versión 1.0.0 con CHANGELOG y README final. 92 pruebas pasando. Se eligió archivo JSON en vez de SQLite porque `node:sqlite` no existe en Node 20 (incluido en el CI); SQLite/PostgreSQL queda en el roadmap. Notas de la release en `labs/entregas/farmacia-pos-api.release.md`. **farmacia-pos-api terminado (v1.0.0).** README de perfil: marcado como Terminado.
+
 ## Lista de proyectos
 
 | # | Proyecto | Estado |
 |---|----------|--------|
-| 1 | farmacia-pos-api | En curso |
-| 2 | boutique-inventario | Pendiente |
+| 1 | farmacia-pos-api | Terminado |
+| 2 | boutique-inventario | Siguiente |
 | 3 | licoreria-pos | Pendiente |
 | 4 | zapateria-catalogo-web | Pendiente |
 | 5 | erp-pymes-api | Pendiente |
@@ -60,4 +59,4 @@ Repo: https://github.com/Angellec21/farmacia-pos-api
 
 ## Proyectos terminados
 
-Ninguno todavía.
+- [farmacia-pos-api](https://github.com/Angellec21/farmacia-pos-api) — v1.0.0 (2026-10-21), 92 pruebas, último commit `158f9a7`. Release pendiente de crear por el Mac con `labs/entregas/farmacia-pos-api.release.md`.
