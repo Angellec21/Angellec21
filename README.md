@@ -43,8 +43,9 @@ Sistemas pensados para negocios reales de Santa Cruz: montos en Bs, reportes par
 | Proyecto | Qué resuelve | Stack | Estado |
 |---|---|---|---|
 | [farmacia-pos-api](https://github.com/Angellec21/farmacia-pos-api) | Farmacias: lotes con vencimiento y salida FEFO, alertas de vencimiento y stock mínimo, ventas con ticket térmico y cierre de caja, compras a droguerías y cuentas por pagar, reportes del dueño, roles admin/cajero, datos guardados en disco y datos de ejemplo (92 pruebas) | Node.js · Express · JWT · Jest | [![CI](https://github.com/Angellec21/farmacia-pos-api/actions/workflows/ci.yml/badge.svg)](https://github.com/Angellec21/farmacia-pos-api/actions/workflows/ci.yml) ✅ Terminado (v1.0.0) |
-| boutique-inventario | Tiendas de ropa: variantes por talla y color, stock por sucursal y transferencias | Python · FastAPI · pytest | Próximamente |
+| boutique-inventario | Tiendas de ropa: variantes por talla y color con SKU, stock por sucursal, ingresos, ajustes con kardex y alertas de reposición (27 pruebas) | Python · FastAPI · pytest | 🚧 En desarrollo |
 | licoreria-pos | Licorerías: caja con apertura/cierre de turno, venta por unidad y por caja | TypeScript · React | Próximamente |
+| zapateria-catalogo-web | Zapaterías: catálogo web con filtros por talla y categoría y pedido por WhatsApp | HTML · CSS | Próximamente |
 
 ### Otros proyectos
 
