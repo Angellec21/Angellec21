@@ -4,11 +4,10 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 
 ## Proyecto actual
 
-**2. boutique-inventario** (Python/FastAPI): inventario para tienda de ropa. Día 1 completado (2026-10-22). Último commit: `3617638`. 27 pruebas pasando.
+**2. boutique-inventario** (Python/FastAPI): inventario para tienda de ropa. Día 2 completado (2026-10-23). Último commit: `d288c52`. 43 pruebas pasando.
 
-- Hecho: catálogo con precio/costo en Bs y margen, variantes talla × color con SKU automático y generación de matriz, stock por sucursal (ingresos todo-o-nada, ajustes por conteo con motivo, kardex), matriz de stock talla × color con valor en Bs, alertas de reposición con stock en otras sucursales, API FastAPI, CI (Python 3.11–3.13), README, topics.
-- Falta: transferencias entre sucursales (envío/recepción), ventas con descuento de stock y anulaciones, reporte de más vendidos y rotación por talla, usuarios/roles, persistencia (SQLite) y datos de ejemplo de Santa Cruz, release v1.0.0.
-- Nota: el repo ya existía en GitHub con un "Initial commit" (README + LICENSE); el trabajo se hizo encima de `911c841` (origin/main es ancestro del bundle). En el README de perfil va sin enlace hasta que el Mac publique el bundle.
+- Hecho: catálogo con precio/costo en Bs y margen, variantes talla × color con SKU automático, stock por sucursal (ingresos, ajustes, kardex), matriz de stock, alertas de reposición, **transferencias entre sucursales** (envío con stock en tránsito, recepción con faltantes y observación, anulación con devolución al origen, endpoints y filtros), CI, README, topics.
+- Falta: ventas con descuento de stock y anulaciones, reporte de más vendidos y rotación por talla, valor de inventario por sucursal, usuarios/roles, persistencia (SQLite) y datos de ejemplo de Santa Cruz, release v1.0.0.
 
 ## Bitácora
 
@@ -44,12 +43,14 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 
 - 2026-10-22 (boutique-inventario, día 1): base sobre `911c841` (Initial commit ya publicado). Commits: `5526da5` feat: catálogo con variantes por talla y color y stock por sucursal; `f5cfe1b` feat: API REST con FastAPI para catálogo, variantes y stock (incluye CI); `3617638` docs: README con problema de negocio, arquitectura y uso de la API (LICENSE a nombre de Angel). 27 pruebas pasando. Entregado en `labs/entregas/boutique-inventario.bundle` + `.topics`.
 
+- 2026-10-23 (boutique-inventario, día 2): `origin/main` ya tenía el día 1 (`3617638`, publicado por el Mac). Commits: `65f7617` feat: transferencias entre sucursales con envío, recepción y anulación; `16f049a` feat: endpoints de transferencias entre sucursales; `d288c52` docs: transferencias en el README con ciclo de vida y ejemplos. 43 pruebas pasando. Bundle actualizado. README de perfil: boutique-inventario ya con enlace e insignia de CI.
+
 ## Lista de proyectos
 
 | # | Proyecto | Estado |
 |---|----------|--------|
 | 1 | farmacia-pos-api | Terminado |
-| 2 | boutique-inventario | En desarrollo (día 1) |
+| 2 | boutique-inventario | En desarrollo (día 2) |
 | 3 | licoreria-pos | Siguiente |
 | 4 | zapateria-catalogo-web | Pendiente |
 | 5 | erp-pymes-api | Pendiente |
