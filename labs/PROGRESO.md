@@ -4,10 +4,10 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 
 ## Proyecto actual
 
-**2. boutique-inventario** (Python/FastAPI): inventario para tienda de ropa. Día 2 completado (2026-10-23). Último commit: `d288c52`. 43 pruebas pasando.
+**2. boutique-inventario** (Python/FastAPI): inventario para tienda de ropa. Día 3 completado (2026-10-26). Último commit: `034848f`. 68 pruebas pasando.
 
-- Hecho: catálogo con precio/costo en Bs y margen, variantes talla × color con SKU automático, stock por sucursal (ingresos, ajustes, kardex), matriz de stock, alertas de reposición, **transferencias entre sucursales** (envío con stock en tránsito, recepción con faltantes y observación, anulación con devolución al origen, endpoints y filtros), CI, README, topics.
-- Falta: ventas con descuento de stock y anulaciones, reporte de más vendidos y rotación por talla, valor de inventario por sucursal, usuarios/roles, persistencia (SQLite) y datos de ejemplo de Santa Cruz, release v1.0.0.
+- Hecho: catálogo con precio/costo en Bs y margen, variantes talla × color con SKU automático, stock por sucursal (ingresos, ajustes, kardex), matriz de stock, alertas de reposición, transferencias entre sucursales, **ventas en caja** (descuento por línea, efectivo con cambio/QR/tarjeta, anulación con devolución al stock) y **reportes del dueño** (más vendidos con margen, ventas por talla, cierre de caja por método de pago y vendedor, valor de inventario por sucursal), CI, README, topics.
+- Falta: usuarios/roles (administrador / encargado de tienda), persistencia (SQLite) y datos de ejemplo de Santa Cruz, versión 1.0.0 con CHANGELOG y release.
 
 ## Bitácora
 
@@ -45,12 +45,14 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 
 - 2026-10-23 (boutique-inventario, día 2): `origin/main` ya tenía el día 1 (`3617638`, publicado por el Mac). Commits: `65f7617` feat: transferencias entre sucursales con envío, recepción y anulación; `16f049a` feat: endpoints de transferencias entre sucursales; `d288c52` docs: transferencias en el README con ciclo de vida y ejemplos. 43 pruebas pasando. Bundle actualizado. README de perfil: boutique-inventario ya con enlace e insignia de CI.
 
+- 2026-10-26 (boutique-inventario, día 3): el Mac aún no había publicado el día 2 (`origin/main` = `3617638`, ancestro del bundle); se continuó desde el bundle. Commits: `6de1bb5` feat: ventas en caja con descuento de stock y anulaciones; `d4c5b15` feat: reportes de más vendidos, ventas por talla, cierre de caja y valor de inventario; `034848f` feat: endpoints de ventas y reportes del dueño (README actualizado). 68 pruebas pasando. Bundle actualizado con días 2 y 3.
+
 ## Lista de proyectos
 
 | # | Proyecto | Estado |
 |---|----------|--------|
 | 1 | farmacia-pos-api | Terminado |
-| 2 | boutique-inventario | En desarrollo (día 2) |
+| 2 | boutique-inventario | En desarrollo (día 3) |
 | 3 | licoreria-pos | Siguiente |
 | 4 | zapateria-catalogo-web | Pendiente |
 | 5 | erp-pymes-api | Pendiente |
