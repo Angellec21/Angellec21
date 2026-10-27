@@ -4,10 +4,10 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 
 ## Proyecto actual
 
-**2. boutique-inventario** (Python/FastAPI): inventario para tienda de ropa. Día 3 completado (2026-10-26). Último commit: `034848f`. 68 pruebas pasando.
+**2. boutique-inventario** (Python/FastAPI): inventario para tienda de ropa. Día 4 completado (2026-10-27). Último commit: `6d79ad0`. 107 pruebas pasando.
 
-- Hecho: catálogo con precio/costo en Bs y margen, variantes talla × color con SKU automático, stock por sucursal (ingresos, ajustes, kardex), matriz de stock, alertas de reposición, transferencias entre sucursales, **ventas en caja** (descuento por línea, efectivo con cambio/QR/tarjeta, anulación con devolución al stock) y **reportes del dueño** (más vendidos con margen, ventas por talla, cierre de caja por método de pago y vendedor, valor de inventario por sucursal), CI, README, topics.
-- Falta: usuarios/roles (administrador / encargado de tienda), persistencia (SQLite) y datos de ejemplo de Santa Cruz, versión 1.0.0 con CHANGELOG y release.
+- Hecho: catálogo con precio/costo en Bs y margen, variantes talla × color con SKU automático, stock por sucursal (ingresos, ajustes, kardex), matriz de stock, alertas de reposición, transferencias entre sucursales, ventas en caja (descuentos, efectivo/QR/tarjeta, anulaciones), reportes del dueño, **usuarios y roles** (login JWT, admin / encargado limitado a su sucursal, costos y reportes solo para admin, gestión de usuarios), CI, README, topics.
+- Falta: persistencia (SQLite o archivo, incluidos los usuarios) y datos de ejemplo de Santa Cruz; versión 1.0.0 con CHANGELOG y release.
 
 ## Bitácora
 
@@ -47,12 +47,14 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 
 - 2026-10-26 (boutique-inventario, día 3): el Mac aún no había publicado el día 2 (`origin/main` = `3617638`, ancestro del bundle); se continuó desde el bundle. Commits: `6de1bb5` feat: ventas en caja con descuento de stock y anulaciones; `d4c5b15` feat: reportes de más vendidos, ventas por talla, cierre de caja y valor de inventario; `034848f` feat: endpoints de ventas y reportes del dueño (README actualizado). 68 pruebas pasando. Bundle actualizado con días 2 y 3.
 
+- 2026-10-27 (boutique-inventario, día 4): `origin/main` ya tenía el día 3 (`034848f`, publicado por el Mac). Commits: `6454ace` feat: usuarios con contraseñas cifradas (PBKDF2) y tokens JWT; `aa98b15` feat: inicio de sesión y permisos por rol en toda la API (encargado limitado a su sucursal, costos/reportes/anulaciones solo admin); `6d79ad0` docs: roles y permisos, configuración de acceso y ejemplos con token. 107 pruebas pasando. Bundle actualizado. README de perfil: descripción con roles y 107 pruebas.
+
 ## Lista de proyectos
 
 | # | Proyecto | Estado |
 |---|----------|--------|
 | 1 | farmacia-pos-api | Terminado |
-| 2 | boutique-inventario | En desarrollo (día 3) |
+| 2 | boutique-inventario | En desarrollo (día 4) |
 | 3 | licoreria-pos | Siguiente |
 | 4 | zapateria-catalogo-web | Pendiente |
 | 5 | erp-pymes-api | Pendiente |
