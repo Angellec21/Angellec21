@@ -4,10 +4,10 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 
 ## Proyecto actual
 
-**2. boutique-inventario** (Python/FastAPI): inventario para tienda de ropa. Día 4 completado (2026-10-27). Último commit: `6d79ad0`. 107 pruebas pasando.
+**2. boutique-inventario** (Python/FastAPI): inventario para tienda de ropa. Día 5 completado (2026-10-28). Último commit: `a95fcf6`. 133 pruebas pasando.
 
-- Hecho: catálogo con precio/costo en Bs y margen, variantes talla × color con SKU automático, stock por sucursal (ingresos, ajustes, kardex), matriz de stock, alertas de reposición, transferencias entre sucursales, ventas en caja (descuentos, efectivo/QR/tarjeta, anulaciones), reportes del dueño, **usuarios y roles** (login JWT, admin / encargado limitado a su sucursal, costos y reportes solo para admin, gestión de usuarios), CI, README, topics.
-- Falta: persistencia (SQLite o archivo, incluidos los usuarios) y datos de ejemplo de Santa Cruz; versión 1.0.0 con CHANGELOG y release.
+- Hecho: catálogo con precio/costo en Bs y margen, variantes talla × color con SKU automático, stock por sucursal (ingresos, ajustes, kardex), matriz de stock, alertas de reposición, transferencias entre sucursales, ventas en caja (descuentos, efectivo/QR/tarjeta, anulaciones), reportes del dueño, **usuarios y roles** (login JWT, admin / encargado limitado a su sucursal, costos y reportes solo para admin, gestión de usuarios), **persistencia en archivo JSON** (escritura atómica, incluye usuarios, se guarda tras cada cambio), **datos de ejemplo** de una boutique de Santa Cruz (`python -m app.datos_ejemplo`), CI, README, topics.
+- Falta (día 6, final): versión 1.0.0 (pyproject y API), CHANGELOG, README final y notas de la release `labs/entregas/boutique-inventario.release.md`.
 
 ## Bitácora
 
@@ -49,12 +49,14 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 
 - 2026-10-27 (boutique-inventario, día 4): `origin/main` ya tenía el día 3 (`034848f`, publicado por el Mac). Commits: `6454ace` feat: usuarios con contraseñas cifradas (PBKDF2) y tokens JWT; `aa98b15` feat: inicio de sesión y permisos por rol en toda la API (encargado limitado a su sucursal, costos/reportes/anulaciones solo admin); `6d79ad0` docs: roles y permisos, configuración de acceso y ejemplos con token. 107 pruebas pasando. Bundle actualizado. README de perfil: descripción con roles y 107 pruebas.
 
+- 2026-10-28 (boutique-inventario, día 5): `origin/main` ya tenía el día 4 (`6d79ad0`, publicado por el Mac). Commits: `a56788e` feat: persistencia del inventario y usuarios en archivo JSON (escritura atómica, carga todo o nada); `b58d916` feat: la API guarda cada cambio y recupera los datos al reiniciar (`BOUTIQUE_DATOS`); `a95fcf6` feat: datos de ejemplo de una boutique de Santa Cruz (3 tiendas, 54 variantes, 2 semanas de ventas, usuarios demo). 133 pruebas pasando. Se eligió archivo JSON (igual que farmacia-pos-api); SQLite/PostgreSQL queda en el roadmap. Bundle actualizado. README de perfil: descripción con persistencia, datos de ejemplo y 133 pruebas.
+
 ## Lista de proyectos
 
 | # | Proyecto | Estado |
 |---|----------|--------|
 | 1 | farmacia-pos-api | Terminado |
-| 2 | boutique-inventario | En desarrollo (día 4) |
+| 2 | boutique-inventario | En desarrollo (día 5) |
 | 3 | licoreria-pos | Siguiente |
 | 4 | zapateria-catalogo-web | Pendiente |
 | 5 | erp-pymes-api | Pendiente |
