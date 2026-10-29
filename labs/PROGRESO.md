@@ -4,10 +4,9 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 
 ## Proyecto actual
 
-**2. boutique-inventario** (Python/FastAPI): inventario para tienda de ropa. Día 5 completado (2026-10-28). Último commit: `a95fcf6`. 133 pruebas pasando.
+**3. licoreria-pos** (TypeScript + React con Vite): punto de venta para licorería. Sin empezar; día 1 en la próxima ejecución (repo nuevo: se crea desde el bundle).
 
-- Hecho: catálogo con precio/costo en Bs y margen, variantes talla × color con SKU automático, stock por sucursal (ingresos, ajustes, kardex), matriz de stock, alertas de reposición, transferencias entre sucursales, ventas en caja (descuentos, efectivo/QR/tarjeta, anulaciones), reportes del dueño, **usuarios y roles** (login JWT, admin / encargado limitado a su sucursal, costos y reportes solo para admin, gestión de usuarios), **persistencia en archivo JSON** (escritura atómica, incluye usuarios, se guarda tras cada cambio), **datos de ejemplo** de una boutique de Santa Cruz (`python -m app.datos_ejemplo`), CI, README, topics.
-- Falta (día 6, final): versión 1.0.0 (pyproject y API), CHANGELOG, README final y notas de la release `labs/entregas/boutique-inventario.release.md`.
+- Falta: estructura Vite + TypeScript, modelo de productos (unidad/caja), caja con apertura y cierre de turno, ventas, control de stock, reporte diario, pruebas (Vitest), CI, README.
 
 ## Bitácora
 
@@ -51,12 +50,14 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 
 - 2026-10-28 (boutique-inventario, día 5): `origin/main` ya tenía el día 4 (`6d79ad0`, publicado por el Mac). Commits: `a56788e` feat: persistencia del inventario y usuarios en archivo JSON (escritura atómica, carga todo o nada); `b58d916` feat: la API guarda cada cambio y recupera los datos al reiniciar (`BOUTIQUE_DATOS`); `a95fcf6` feat: datos de ejemplo de una boutique de Santa Cruz (3 tiendas, 54 variantes, 2 semanas de ventas, usuarios demo). 133 pruebas pasando. Se eligió archivo JSON (igual que farmacia-pos-api); SQLite/PostgreSQL queda en el roadmap. Bundle actualizado. README de perfil: descripción con persistencia, datos de ejemplo y 133 pruebas.
 
+- 2026-10-29 (boutique-inventario, día 6, final): `origin/main` ya tenía el día 5 (`a95fcf6`, publicado por el Mac). Commits: `44f4bf8` feat: respaldo descargable (`GET /respaldo`, solo admin) y `/salud` con versión y modo de guardado; `e28ebc8` docs: versión 1.0.0 con CHANGELOG y README final. 139 pruebas pasando. Notas de la release en `labs/entregas/boutique-inventario.release.md`. **boutique-inventario terminado (v1.0.0).** README de perfil: marcado como Terminado.
+
 ## Lista de proyectos
 
 | # | Proyecto | Estado |
 |---|----------|--------|
 | 1 | farmacia-pos-api | Terminado |
-| 2 | boutique-inventario | En desarrollo (día 5) |
+| 2 | boutique-inventario | Terminado |
 | 3 | licoreria-pos | Siguiente |
 | 4 | zapateria-catalogo-web | Pendiente |
 | 5 | erp-pymes-api | Pendiente |
@@ -71,3 +72,4 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 ## Proyectos terminados
 
 - [farmacia-pos-api](https://github.com/Angellec21/farmacia-pos-api) — v1.0.0 (2026-10-21), 92 pruebas, último commit `158f9a7`. Release pendiente de crear por el Mac con `labs/entregas/farmacia-pos-api.release.md`.
+- [boutique-inventario](https://github.com/Angellec21/boutique-inventario) — v1.0.0 (2026-10-29), 139 pruebas, último commit `e28ebc8`. Release pendiente de crear por el Mac con `labs/entregas/boutique-inventario.release.md`.
