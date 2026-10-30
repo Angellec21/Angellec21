@@ -44,8 +44,9 @@ Sistemas pensados para negocios reales de Santa Cruz: montos en Bs, reportes par
 |---|---|---|---|
 | [farmacia-pos-api](https://github.com/Angellec21/farmacia-pos-api) | Farmacias: lotes con vencimiento y salida FEFO, alertas de vencimiento y stock mínimo, ventas con ticket térmico y cierre de caja, compras a droguerías y cuentas por pagar, reportes del dueño, roles admin/cajero, datos guardados en disco y datos de ejemplo (92 pruebas) | Node.js · Express · JWT · Jest | [![CI](https://github.com/Angellec21/farmacia-pos-api/actions/workflows/ci.yml/badge.svg)](https://github.com/Angellec21/farmacia-pos-api/actions/workflows/ci.yml) ✅ Terminado (v1.0.0) |
 | [boutique-inventario](https://github.com/Angellec21/boutique-inventario) | Tiendas de ropa con varias sucursales: variantes por talla y color con SKU, stock por tienda con kardex, alertas de reposición, transferencias entre sucursales, ventas en caja con descuentos y anulaciones, reportes de más vendidos, tallas y cierre de caja, roles admin/encargado por sucursal, guardado en disco con respaldo descargable y una boutique de ejemplo de Santa Cruz (139 pruebas) | Python · FastAPI · JWT · pytest | [![CI](https://github.com/Angellec21/boutique-inventario/actions/workflows/ci.yml/badge.svg)](https://github.com/Angellec21/boutique-inventario/actions/workflows/ci.yml) ✅ Terminado (v1.0.0) |
-| licoreria-pos | Licorerías: caja con apertura/cierre de turno, venta por unidad y por caja | TypeScript · React | Próximamente |
+| licoreria-pos | Licorerías: venta por unidad y por caja con stock en unidades, alertas de reposición, caja por turnos con anulaciones y arqueo de cierre (faltante/sobrante y margen) (28 pruebas) | TypeScript · React · Vite · Vitest | 🚧 En desarrollo |
 | zapateria-catalogo-web | Zapaterías: catálogo web con filtros por talla y categoría y pedido por WhatsApp | HTML · CSS | Próximamente |
+| erp-pymes-api | Pymes: compras, proveedores, cuentas por pagar/cobrar y facturación básica | Node.js · Express | Próximamente |
 
 ### Otros proyectos
 

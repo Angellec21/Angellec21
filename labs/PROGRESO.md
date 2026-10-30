@@ -4,9 +4,10 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 
 ## Proyecto actual
 
-**3. licoreria-pos** (TypeScript + React con Vite): punto de venta para licorería. Sin empezar; día 1 en la próxima ejecución (repo nuevo: se crea desde el bundle).
+**3. licoreria-pos** (TypeScript + React con Vite) — día 1 de ~6. Último commit: `e7b4cbf`. Entregado en `labs/entregas/licoreria-pos.bundle` (pendiente de publicar por el Mac).
 
-- Falta: estructura Vite + TypeScript, modelo de productos (unidad/caja), caja con apertura y cierre de turno, ventas, control de stock, reporte diario, pruebas (Vitest), CI, README.
+- Hecho: base Vite + React 19 + TypeScript estricto + Vitest, CI (Node 20/22/24), inventario con venta por unidad y por caja, alertas de stock mínimo, caja por turnos (apertura, ventas todo o nada, anulaciones, arqueo de cierre), catálogo de ejemplo de Santa Cruz, README. 28 pruebas.
+- Falta: pantalla de cobro (carrito, lector de código de barras, ticket), apertura/cierre de turno desde la interfaz, reporte diario del dueño, ingreso de mercadería en la interfaz, guardado en el navegador (localStorage), CHANGELOG y v1.0.0.
 
 ## Bitácora
 
@@ -52,13 +53,15 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 
 - 2026-10-29 (boutique-inventario, día 6, final): `origin/main` ya tenía el día 5 (`a95fcf6`, publicado por el Mac). Commits: `44f4bf8` feat: respaldo descargable (`GET /respaldo`, solo admin) y `/salud` con versión y modo de guardado; `e28ebc8` docs: versión 1.0.0 con CHANGELOG y README final. 139 pruebas pasando. Notas de la release en `labs/entregas/boutique-inventario.release.md`. **boutique-inventario terminado (v1.0.0).** README de perfil: marcado como Terminado.
 
+- 2026-10-30 (licoreria-pos, día 1): base sobre `bc976e9` (Initial commit ya publicado). Commits: `cbb4ab8` feat: catálogo y stock con venta por unidad y por caja (incluye CI y LICENSE a nombre de Angel); `9ef73f2` feat: turnos de caja con ventas, anulaciones y arqueo de cierre; `e7b4cbf` docs: README con el problema de negocio, arquitectura y uso. 28 pruebas pasando y build OK. Entregado en `labs/entregas/licoreria-pos.bundle` + `.topics`. README de perfil: licoreria-pos "En desarrollo" (enlace e insignia desde la próxima ejecución) y erp-pymes-api como "Próximamente".
+
 ## Lista de proyectos
 
 | # | Proyecto | Estado |
 |---|----------|--------|
 | 1 | farmacia-pos-api | Terminado |
 | 2 | boutique-inventario | Terminado |
-| 3 | licoreria-pos | Siguiente |
+| 3 | licoreria-pos | En desarrollo (día 1) |
 | 4 | zapateria-catalogo-web | Pendiente |
 | 5 | erp-pymes-api | Pendiente |
 | 6 | ferreteria-stock | Pendiente |
