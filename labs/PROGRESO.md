@@ -4,10 +4,10 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 
 ## Proyecto actual
 
-**3. licoreria-pos** (TypeScript + React con Vite) — día 2 de ~6. Último commit: `187e8c2`. Entregado en `labs/entregas/licoreria-pos.bundle` (pendiente de publicar por el Mac; `origin/main` = `e7b4cbf`).
+**3. licoreria-pos** (TypeScript + React con Vite) — día 3 de ~6. Último commit: `3dcf258`. Entregado en `labs/entregas/licoreria-pos.bundle` (pendiente de publicar por el Mac; `origin/main` = `187e8c2`).
 
-- Hecho: dominio (inventario por unidad/caja, alertas, caja por turnos con arqueo), carrito inmutable con lector de código de barras (`3*código`, `c*código`), sugerencia de ahorro por caja, ticket térmico de 58/80 mm, pantalla de cobro (apertura, carrito, efectivo/QR/tarjeta con cambio, ticket imprimible) y cierre de turno desde la interfaz, responsive. 48 pruebas y build OK.
-- Falta: reporte diario del dueño (ventas por hora, más vendidos, margen por categoría), ingreso de mercadería y anulaciones desde la interfaz, guardado en el navegador (localStorage), CHANGELOG y v1.0.0.
+- Hecho: dominio (inventario por unidad/caja, alertas, caja por turnos con arqueo), carrito con lector de código de barras, sugerencia de ahorro por caja, ticket térmico de 58/80 mm, pantalla de cobro, apertura y cierre de turno desde la interfaz, y reporte del día del dueño (KPIs, ventas por hora con hora pico, más vendidos, margen por categoría, métodos de pago, cajeros, anuladas aparte, CSV para Excel e impresión). 59 pruebas y build OK.
+- Falta: ingreso de mercadería y anulaciones desde la interfaz, guardado en el navegador (localStorage), datos de ejemplo de ventas, CHANGELOG y v1.0.0.
 
 ## Bitácora
 
@@ -57,13 +57,15 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 
 - 2026-11-02 (licoreria-pos, día 2): `origin/main` ya tenía el día 1 (`e7b4cbf`, publicado por el Mac). Commits: `de9f460` feat: carrito de cobro con lector de código de barras y ticket de 58 mm; `ab6d338` feat: pantalla de cobro con apertura, ticket y cierre de turno; `187e8c2` docs: pantalla de cobro, ticket y cierre en el README. 48 pruebas pasando y build OK (probado en navegador, también a 390 px). Bundle actualizado. README de perfil: licoreria-pos ya con enlace e insignia de CI.
 
+- 2026-11-03 (licoreria-pos, día 3): `origin/main` ya tenía el día 2 (`187e8c2`, publicado por el Mac). Commits: `781cac3` feat: reporte diario del dueño con margen por categoría y hora pico (día comercial en UTC−4 fijo, CSV para Excel); `df52f05` feat: pantalla "Reporte del día" con KPIs, hora pico y exportación a CSV; `3dcf258` docs: reporte del día en el README. 59 pruebas pasando y build OK (probado en navegador a 1200 y 390 px, sin errores de consola). Bundle actualizado. README de perfil: descripción con reporte del día y 59 pruebas.
+
 ## Lista de proyectos
 
 | # | Proyecto | Estado |
 |---|----------|--------|
 | 1 | farmacia-pos-api | Terminado |
 | 2 | boutique-inventario | Terminado |
-| 3 | licoreria-pos | En desarrollo (día 2) |
+| 3 | licoreria-pos | En desarrollo (día 3) |
 | 4 | zapateria-catalogo-web | Pendiente |
 | 5 | erp-pymes-api | Pendiente |
 | 6 | ferreteria-stock | Pendiente |
