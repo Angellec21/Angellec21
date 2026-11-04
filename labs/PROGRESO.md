@@ -4,10 +4,10 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 
 ## Proyecto actual
 
-**3. licoreria-pos** (TypeScript + React con Vite) — día 3 de ~6. Último commit: `3dcf258`. Entregado en `labs/entregas/licoreria-pos.bundle` (pendiente de publicar por el Mac; `origin/main` = `187e8c2`).
+**3. licoreria-pos** (TypeScript + React con Vite) — día 4 de ~6. Último commit: `ccbb86d`. Entregado en `labs/entregas/licoreria-pos.bundle` (pendiente de publicar por el Mac; `origin/main` = `3dcf258`).
 
-- Hecho: dominio (inventario por unidad/caja, alertas, caja por turnos con arqueo), carrito con lector de código de barras, sugerencia de ahorro por caja, ticket térmico de 58/80 mm, pantalla de cobro, apertura y cierre de turno desde la interfaz, y reporte del día del dueño (KPIs, ventas por hora con hora pico, más vendidos, margen por categoría, métodos de pago, cajeros, anuladas aparte, CSV para Excel e impresión). 59 pruebas y build OK.
-- Falta: ingreso de mercadería y anulaciones desde la interfaz, guardado en el navegador (localStorage), datos de ejemplo de ventas, CHANGELOG y v1.0.0.
+- Hecho: dominio (inventario por unidad/caja, alertas, caja por turnos con arqueo), carrito con lector de código de barras, sugerencia de ahorro por caja, ticket térmico, pantalla de cobro, apertura y cierre de turno, reporte del día del dueño, ingreso de mercadería desde la interfaz (costo promedio ponderado, proveedor/factura, historial, pedido sugerido) y pantalla "Ventas del turno" (anulación con motivo y hora, copia del ticket). 65 pruebas y build OK.
+- Falta: guardado en el navegador (localStorage), datos de ejemplo de ventas, CHANGELOG y v1.0.0.
 
 ## Bitácora
 
@@ -59,13 +59,15 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 
 - 2026-11-03 (licoreria-pos, día 3): `origin/main` ya tenía el día 2 (`187e8c2`, publicado por el Mac). Commits: `781cac3` feat: reporte diario del dueño con margen por categoría y hora pico (día comercial en UTC−4 fijo, CSV para Excel); `df52f05` feat: pantalla "Reporte del día" con KPIs, hora pico y exportación a CSV; `3dcf258` docs: reporte del día en el README. 59 pruebas pasando y build OK (probado en navegador a 1200 y 390 px, sin errores de consola). Bundle actualizado. README de perfil: descripción con reporte del día y 59 pruebas.
 
+- 2026-11-04 (licoreria-pos, día 4): `origin/main` ya tenía el día 3 (`3dcf258`, publicado por el Mac). Commits: `c02b926` feat: ingreso de mercadería con costo promedio ponderado, proveedor/factura, historial y pedido sugerido en cajas; `d880208` feat: pantalla "Ventas del turno" con anulación con motivo (hora registrada, motivo en el ticket) y copia del ticket; `ccbb86d` docs: README actualizado. 65 pruebas pasando y build OK (probado en navegador a 1200 y 390 px, sin errores de consola ni desborde horizontal). Bundle actualizado. README de perfil: descripción con ingreso de mercadería, anulaciones y 65 pruebas.
+
 ## Lista de proyectos
 
 | # | Proyecto | Estado |
 |---|----------|--------|
 | 1 | farmacia-pos-api | Terminado |
 | 2 | boutique-inventario | Terminado |
-| 3 | licoreria-pos | En desarrollo (día 3) |
+| 3 | licoreria-pos | En desarrollo (día 4) |
 | 4 | zapateria-catalogo-web | Pendiente |
 | 5 | erp-pymes-api | Pendiente |
 | 6 | ferreteria-stock | Pendiente |
