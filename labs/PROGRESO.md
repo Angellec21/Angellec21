@@ -4,10 +4,10 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 
 ## Proyecto actual
 
-**3. licoreria-pos** (TypeScript + React con Vite) — día 4 de ~6. Último commit: `ccbb86d`. Entregado en `labs/entregas/licoreria-pos.bundle` (pendiente de publicar por el Mac; `origin/main` = `3dcf258`).
+**3. licoreria-pos** (TypeScript + React con Vite) — día 5 de ~6. Último commit: `e5eab08`. Entregado en `labs/entregas/licoreria-pos.bundle` (pendiente de publicar por el Mac; `origin/main` = `ccbb86d`).
 
-- Hecho: dominio (inventario por unidad/caja, alertas, caja por turnos con arqueo), carrito con lector de código de barras, sugerencia de ahorro por caja, ticket térmico, pantalla de cobro, apertura y cierre de turno, reporte del día del dueño, ingreso de mercadería desde la interfaz (costo promedio ponderado, proveedor/factura, historial, pedido sugerido) y pantalla "Ventas del turno" (anulación con motivo y hora, copia del ticket). 65 pruebas y build OK.
-- Falta: guardado en el navegador (localStorage), datos de ejemplo de ventas, CHANGELOG y v1.0.0.
+- Hecho: dominio (inventario por unidad/caja, alertas, caja por turnos con arqueo), carrito con lector de código de barras, sugerencia de ahorro por caja, ticket térmico, pantalla de cobro, apertura y cierre de turno, reporte del día del dueño, ingreso de mercadería, ventas del turno con anulación, y guardado automático en el navegador (localStorage) con respaldo descargable y restauración validada. 73 pruebas y build OK.
+- Falta: datos de ejemplo de ventas (para que el reporte del día no arranque vacío), CHANGELOG y v1.0.0 (notas de la release).
 
 ## Bitácora
 
@@ -61,13 +61,15 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 
 - 2026-11-04 (licoreria-pos, día 4): `origin/main` ya tenía el día 3 (`3dcf258`, publicado por el Mac). Commits: `c02b926` feat: ingreso de mercadería con costo promedio ponderado, proveedor/factura, historial y pedido sugerido en cajas; `d880208` feat: pantalla "Ventas del turno" con anulación con motivo (hora registrada, motivo en el ticket) y copia del ticket; `ccbb86d` docs: README actualizado. 65 pruebas pasando y build OK (probado en navegador a 1200 y 390 px, sin errores de consola ni desborde horizontal). Bundle actualizado. README de perfil: descripción con ingreso de mercadería, anulaciones y 65 pruebas.
 
+- 2026-11-05 (licoreria-pos, día 5): `origin/main` ya tenía el día 4 (`ccbb86d`, publicado por el Mac). Commits: `4077160` feat: guardado y restauración del estado (exportar/restaurar en Inventario y Caja, JSON con esquema versionado, guardado dañado se aparta en vez de borrarse); `a9c1c38` feat: guardado automático en localStorage, estado de guardado en el encabezado, panel "Datos y respaldo" (descargar respaldo, restaurar desde archivo, volver a datos de ejemplo) y sincronización entre pestañas; `e5eab08` docs: README actualizado. 73 pruebas pasando y build OK (probado en navegador: venta → recarga conserva el turno, respaldo/restauración, archivo inválido rechazado, guardado dañado apartado; 1200 y 390 px sin errores de consola ni desborde). Bundle actualizado. README de perfil: descripción con guardado y 73 pruebas.
+
 ## Lista de proyectos
 
 | # | Proyecto | Estado |
 |---|----------|--------|
 | 1 | farmacia-pos-api | Terminado |
 | 2 | boutique-inventario | Terminado |
-| 3 | licoreria-pos | En desarrollo (día 4) |
+| 3 | licoreria-pos | En desarrollo (día 5) |
 | 4 | zapateria-catalogo-web | Pendiente |
 | 5 | erp-pymes-api | Pendiente |
 | 6 | ferreteria-stock | Pendiente |
