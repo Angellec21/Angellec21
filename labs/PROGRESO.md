@@ -4,10 +4,9 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 
 ## Proyecto actual
 
-**3. licoreria-pos** (TypeScript + React con Vite) — día 5 de ~6. Último commit: `e5eab08`. Entregado en `labs/entregas/licoreria-pos.bundle` (pendiente de publicar por el Mac; `origin/main` = `ccbb86d`).
+**4. zapateria-catalogo-web** (HTML/CSS) — empieza en la próxima ejecución (día 1). El repo todavía no existe en GitHub: se creará cuando el Mac publique el primer bundle.
 
-- Hecho: dominio (inventario por unidad/caja, alertas, caja por turnos con arqueo), carrito con lector de código de barras, sugerencia de ahorro por caja, ticket térmico, pantalla de cobro, apertura y cierre de turno, reporte del día del dueño, ingreso de mercadería, ventas del turno con anulación, y guardado automático en el navegador (localStorage) con respaldo descargable y restauración validada. 73 pruebas y build OK.
-- Falta: datos de ejemplo de ventas (para que el reporte del día no arranque vacío), CHANGELOG y v1.0.0 (notas de la release).
+- licoreria-pos quedó terminado (v1.0.0) el 2026-11-06; último commit `f9af304`, pendiente de publicar por el Mac junto con su release.
 
 ## Bitácora
 
@@ -62,6 +61,7 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 - 2026-11-04 (licoreria-pos, día 4): `origin/main` ya tenía el día 3 (`3dcf258`, publicado por el Mac). Commits: `c02b926` feat: ingreso de mercadería con costo promedio ponderado, proveedor/factura, historial y pedido sugerido en cajas; `d880208` feat: pantalla "Ventas del turno" con anulación con motivo (hora registrada, motivo en el ticket) y copia del ticket; `ccbb86d` docs: README actualizado. 65 pruebas pasando y build OK (probado en navegador a 1200 y 390 px, sin errores de consola ni desborde horizontal). Bundle actualizado. README de perfil: descripción con ingreso de mercadería, anulaciones y 65 pruebas.
 
 - 2026-11-05 (licoreria-pos, día 5): `origin/main` ya tenía el día 4 (`ccbb86d`, publicado por el Mac). Commits: `4077160` feat: guardado y restauración del estado (exportar/restaurar en Inventario y Caja, JSON con esquema versionado, guardado dañado se aparta en vez de borrarse); `a9c1c38` feat: guardado automático en localStorage, estado de guardado en el encabezado, panel "Datos y respaldo" (descargar respaldo, restaurar desde archivo, volver a datos de ejemplo) y sincronización entre pestañas; `e5eab08` docs: README actualizado. 73 pruebas pasando y build OK (probado en navegador: venta → recarga conserva el turno, respaldo/restauración, archivo inválido rechazado, guardado dañado apartado; 1200 y 390 px sin errores de consola ni desborde). Bundle actualizado. README de perfil: descripción con guardado y 73 pruebas.
+- 2026-11-06 (licoreria-pos, día 6, final): `origin/main` ya tenía el día 5 (`e5eab08`, publicado por el Mac). Commits: `1dedaa7` feat: historial de ventas de ejemplo de una semana en Santa Cruz (dos turnos por día, más ventas viernes/sábado y de noche, compras al distribuidor cada mañana, anulaciones y arqueos con faltante; generado con las operaciones reales de la caja y determinista); `b7bd46f` feat: la app arranca con esos datos y el reporte abre en el último día con ventas si hoy no hubo ninguna; `f9af304` docs: versión 1.0.0 con CHANGELOG y README final. 84 pruebas pasando y build OK (probado en navegador a 1200 y 390 px, sin errores de consola ni desborde). Notas de la release en `labs/entregas/licoreria-pos.release.md`. **licoreria-pos terminado (v1.0.0).** README de perfil: marcado como Terminado.
 
 ## Lista de proyectos
 
@@ -69,7 +69,7 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 |---|----------|--------|
 | 1 | farmacia-pos-api | Terminado |
 | 2 | boutique-inventario | Terminado |
-| 3 | licoreria-pos | En desarrollo (día 5) |
+| 3 | licoreria-pos | Terminado |
 | 4 | zapateria-catalogo-web | Pendiente |
 | 5 | erp-pymes-api | Pendiente |
 | 6 | ferreteria-stock | Pendiente |
@@ -84,3 +84,4 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 
 - [farmacia-pos-api](https://github.com/Angellec21/farmacia-pos-api) — v1.0.0 (2026-10-21), 92 pruebas, último commit `158f9a7`. Release pendiente de crear por el Mac con `labs/entregas/farmacia-pos-api.release.md`.
 - [boutique-inventario](https://github.com/Angellec21/boutique-inventario) — v1.0.0 (2026-10-29), 139 pruebas, último commit `e28ebc8`. Release pendiente de crear por el Mac con `labs/entregas/boutique-inventario.release.md`.
+- [licoreria-pos](https://github.com/Angellec21/licoreria-pos) — v1.0.0 (2026-11-06), 84 pruebas, último commit `f9af304`. Release pendiente de crear por el Mac con `labs/entregas/licoreria-pos.release.md`.
