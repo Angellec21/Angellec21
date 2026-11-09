@@ -4,9 +4,11 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 
 ## Proyecto actual
 
-**4. zapateria-catalogo-web** (HTML/CSS) — empieza en la próxima ejecución (día 1). El repo todavía no existe en GitHub: se creará cuando el Mac publique el primer bundle.
+**4. zapateria-catalogo-web** (HTML/CSS/JS) — día 1 de ~5–6 entregado el 2026-11-09. Último commit `37e482c`. Bundle en `labs/entregas/zapateria-catalogo-web.bundle` (pendiente de publicar por el Mac).
 
-- licoreria-pos quedó terminado (v1.0.0) el 2026-11-06; último commit `f9af304`, pendiente de publicar por el Mac junto con su release.
+- Hecho: catálogo con 16 modelos de ejemplo (Calzados Piraí, Santa Cruz), etiquetas de oferta/nuevo/agotado, filtros por categoría, género y talla con búsqueda, orden y estado en la URL, CI (html-validate + node:test en Node 20 y 22), README. 25 pruebas.
+- Falta: ficha de producto con selección de talla; pedido por WhatsApp con mensaje armado; carrito de varios pares; panel de filtros plegable en celulares; SEO local (datos estructurados) y preparación para GitHub Pages; CHANGELOG, release v1.0.0.
+- Pendiente del Mac: licoreria-pos día 6 (`f9af304`, v1.0.0) aún no está en GitHub (origin/main = `e5eab08` al 2026-11-09).
 
 ## Bitácora
 
@@ -62,6 +64,7 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 
 - 2026-11-05 (licoreria-pos, día 5): `origin/main` ya tenía el día 4 (`ccbb86d`, publicado por el Mac). Commits: `4077160` feat: guardado y restauración del estado (exportar/restaurar en Inventario y Caja, JSON con esquema versionado, guardado dañado se aparta en vez de borrarse); `a9c1c38` feat: guardado automático en localStorage, estado de guardado en el encabezado, panel "Datos y respaldo" (descargar respaldo, restaurar desde archivo, volver a datos de ejemplo) y sincronización entre pestañas; `e5eab08` docs: README actualizado. 73 pruebas pasando y build OK (probado en navegador: venta → recarga conserva el turno, respaldo/restauración, archivo inválido rechazado, guardado dañado apartado; 1200 y 390 px sin errores de consola ni desborde). Bundle actualizado. README de perfil: descripción con guardado y 73 pruebas.
 - 2026-11-06 (licoreria-pos, día 6, final): `origin/main` ya tenía el día 5 (`e5eab08`, publicado por el Mac). Commits: `1dedaa7` feat: historial de ventas de ejemplo de una semana en Santa Cruz (dos turnos por día, más ventas viernes/sábado y de noche, compras al distribuidor cada mañana, anulaciones y arqueos con faltante; generado con las operaciones reales de la caja y determinista); `b7bd46f` feat: la app arranca con esos datos y el reporte abre en el último día con ventas si hoy no hubo ninguna; `f9af304` docs: versión 1.0.0 con CHANGELOG y README final. 84 pruebas pasando y build OK (probado en navegador a 1200 y 390 px, sin errores de consola ni desborde). Notas de la release en `labs/entregas/licoreria-pos.release.md`. **licoreria-pos terminado (v1.0.0).** README de perfil: marcado como Terminado.
+- 2026-11-09 (zapateria-catalogo-web, día 1): base sobre `d625659` (Initial commit ya publicado). Commits: `43be56c` feat: catálogo base con productos de ejemplo y diseño responsive (incluye CI, LICENSE a nombre de Angel); `37211e9` feat: filtros por categoría, talla y género con búsqueda y orden (estado en la URL); `37e482c` docs: README con el problema de negocio, arquitectura y uso. 25 pruebas pasando y HTML válido con reglas de accesibilidad (probado en navegador a 1200 y 390 px, sin errores de consola ni desborde). Entregado en `labs/entregas/zapateria-catalogo-web.bundle` + `.topics`. Aviso: el día 6 de licoreria-pos (`f9af304`) todavía no fue publicado por el Mac. README de perfil: zapateria-catalogo-web "En desarrollo" (enlace e insignia desde la próxima ejecución) y ferreteria-stock como "Próximamente".
 
 ## Lista de proyectos
 
@@ -70,7 +73,7 @@ Archivo de estado del plan diario de proyectos. Lo actualiza la tarea programada
 | 1 | farmacia-pos-api | Terminado |
 | 2 | boutique-inventario | Terminado |
 | 3 | licoreria-pos | Terminado |
-| 4 | zapateria-catalogo-web | Pendiente |
+| 4 | zapateria-catalogo-web | En desarrollo |
 | 5 | erp-pymes-api | Pendiente |
 | 6 | ferreteria-stock | Pendiente |
 | 7 | restaurante-comandas | Pendiente |
